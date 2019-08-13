@@ -13,12 +13,18 @@ public class VerifyDate {
 	//method to check if date2 is within the next 30 days of date1
 	private static Boolean DateWithin30Days(Date date1, Date date2) {
 		//check for date2 being in the past
-        	if( date2 < date1) { return false; }
+        	if( date2 < date1) { 
+			return false;
+		}
         
         	//check that date2 is within (>=) 30 days of date1
         	Date date30Days = date1.addDays(30); //create a date 30 days away from date1
-		if( date2 >= date30Days ) { return false; }
-		else { return true; }
+		if( date2 >= date30Days ) { 
+			return false; 
+		}
+		else { 
+			return true; 
+		}
 	}
 
 	//method to return the end of the month of a given date
