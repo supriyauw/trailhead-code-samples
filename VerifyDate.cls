@@ -15,7 +15,7 @@ public class VerifyDate {
 		//check for date2 being in the past
         	if( date2 < date1) { return false; }
         
-        	//check that date2 is within (>=) 30 days of date1
+        	//check that date2 is within (<=) 30 days of date1
         	Date date30Days = date1.addDays(30); //create a date 30 days away from date1
 		if( date2 >= date30Days ) { return false; }
 		else { return true; }
